@@ -1,9 +1,8 @@
 Cycle2Slider
 ============
 # Progressive Loading
-
-Basic Structure need to be followed while creating a progressive loader
 ![alt tag](https://raw.github.com/ajaykumaryadav/Cycle2Slider/master/waterfall%20loading%20chart.jpg)
+Basic Structure need to be followed while creating a progressive loader
 
 
 ```sh
