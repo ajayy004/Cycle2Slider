@@ -63,4 +63,4 @@ Basic Structure need to be followed while creating a progressive loader
 
 # Limitations with progressive loading
 Currently, slideshows with pagers are not supported with the progressive option. This seems like an edge case, but if there is an uproar then I'll add support for it.
-For more information follow the (Link)[http://jquery.malsup.com/cycle2/demo/progressive.php]
+For more information follow the [link][http://jquery.malsup.com/cycle2/demo/progressive.php]
