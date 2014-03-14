@@ -1,0 +1,88 @@
+/*tags reset*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+html {
+	background: #CCC;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#content {
+	width: 940px;
+	margin: 0 auto;
+}
+h1 {
+	font: 60px/70px "sans-serif";
+	margin: 0 0 60px 0;
+	text-align: center;
+}
+h3 {
+	font: 30px/40px "sans-serif";
+	margin-bottom: 20px;
+	text-align: center;
+}
+.sliderWrap {
+	float: left;
+	margin: 0 20px
+}
+.sliderWrap .slider{
+	width: 400px;
+	height: 300px;
+	margin: 10px auto;
+	-webkit-box-shadow: 0 0 10px #000;
+	-moz-box-shadow: 0 0 10px #000;
+	-ms-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+	position: relative;
+}
+.sliderWrap .slide span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.3);
+	color: #FFF;
+	letter-spacing: 2px;
+	padding: 10px;
+	width: 100%;
+	-webkit-box-shadow: 0 3px 2px -2px #000;
+	-moz-box-shadow: 0 3px 2px -2px #000;
+	-ms-box-shadow: 0 3px 2px -2px #000;
+	box-shadow: 0 3px 2px -2px #000;
+}
+.controller {
+	text-align: center;
+	font: 30px/40px "sans-serif";
+	margin: 20px 0
+}
+#progress {
+position: absolute;
+bottom: 0;
+height: 6px;
+width: 0px;
+background: #C00;
+z-index: 500;
+}
+.left-pull,
+.sliderNav {
+	float: left;
+}
+.sliderNav {
+	margin: 25px 0;
+}
+.sliderNav li {
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+	background: #888;
+	margin: 0 5px 10px 0;
+}
+.sliderNav li img {
+	width: 100%;
+}
+.sliderNav li.cycle-pager-active {
+	background: #FFF;
+	color: #000;
+	box-shadow: 0 0 5px #000;
+}
