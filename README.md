@@ -9,7 +9,8 @@ Basic Structure need to be followed while creating a progressive loader
   <div class="cycle-slideshow" 
     data-cycle-timeout=2000
     data-cycle-loader=true
-    data-cycle-progressive="#images" # You need to mention the id/class to have the progressive loading, Basicly it tell to not start loading till the dom is not loaded completly
+    data-cycle-progressive="#images" # You need to mention the id/class to have the progressive loading, Basicly it 
+    				       #tell to not start loading till the dom is not loaded completly
     >
     #Markup declared below will be loaded as the DOM loaded
     <img src="assets/images/slider-1.jpg">
