@@ -4,9 +4,8 @@
     <head>
         <title>Cycle2 Slider-Progressive Loading</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="description" content="Web Tutorials">
+		<meta name="description" content="Cycle 2 Progressive Loading">
 		<meta name="keywords" content="HTML,CSS,Cycle2,JavaScript">
-		<meta name="author" content="Ajay Yadav">
 		<meta charset="UTF-8">        	
 		<link type="text/css" href="assets/css/custom.css" rel="stylesheet" />
 		<script type="text/javascript" src="assets/js/jquery-1.10.2.js"></script>
@@ -16,40 +15,11 @@
     <body>
     	<div id="wrapper">
     		<div id="content">
-    			<h1>Progressive Loading</h1>
-    			<div class="sliderWrap type1">
-    				<h3>Type-1 Auto slider</h3>
+    			<h3>Progressive Loading</h3>
+				<div class="sliderWrap">
 					<div class="cycle-slideshow slider" 
 					    data-cycle-fx=scrollHorz
-					    data-cycle-timeout=2000
-					    data-cycle-loader=true
-					    data-cycle-progressive="#images"
-					    >
-					    <!-- only one image declared in markup -->
-					    <img src="assets/images/slider-1.jpg">
-
-					    <script id="images" type="text/cycle">
-							[
-							    "<img src='assets/images/slider-2.jpg'>",
-							    "<img src='assets/images/slider-3.jpg'>",
-							    "<img src='assets/images/slider-4.jpg'>",
-							    "<img src='assets/images/slider-5.jpg'>",
-							    "<img src='assets/images/slider-6.jpg'>",
-							    "<img src='assets/images/slider-7.jpg'>",
-							    "<img src='assets/images/slider-8.jpg'>",
-							    "<img src='assets/images/slider-9.jpg'>",
-							    "<img src='assets/images/slider-10.jpg'>"				    
-							]
-						</script>
-						<div id="progress"></div>
-					</div>
-				</div>  
-
-				<div class="sliderWrap type2">
-    				<h3>Type-2 Manual slider</h3>
-					<div class="cycle-slideshow slider" 
-					    data-cycle-fx=scrollHorz
-					    data-cycle-timeout=0
+					    data-cycle-timeout=3000
 					    data-cycle-loader=true
 					    data-cycle-prev="#prevBtn"
     					data-cycle-next="#nextBtn"
@@ -108,33 +78,46 @@
 							    <span>Slider image 10</span>
 							</div>
 						</script>
+						<div id="progress"></div>
 					</div>
     				<div class="center controller">
 					    <a href=# id="prevBtn">Prev</a> 
 					    <a href=# id="nextBtn">Next</a>
 					</div>					
 				</div>
-
-    			<div class="sliderWrap type3">
-    				<h3>Type-3</h3>
-					<div class="cycle-slideshow slider left-pull" 
-					    data-cycle-fx=scrollHorz
-					    data-cycle-timeout=2000
-					    cycle-next="#next" 
-					    data-cycle-prev="#prev"
-					    data-cycle-pager=".sliderNav"
-					    >
-					    <img src="assets/images/slider-1.jpg" 
-					    	data-cycle-pager-template='<li><img src="assets/images/slider-1.jpg"></li>'>
-					    <img src='assets/images/slider-2.jpg' 
-					    	data-cycle-pager-template='<li><img src="assets/images/slider-2.jpg"></li>'>
-					    <img src='assets/images/slider-3.jpg' 
-					    	data-cycle-pager-template='<li><img src="assets/images/slider-3.jpg"></li>'>
-					    <img src='assets/images/slider-4.jpg' 
-					    	data-cycle-pager-template='<li><img src="assets/images/slider-4.jpg"></li>'>
-					</div>
-					<ul class="sliderNav"></ul>
-				</div>
+<pre><code>
+&lt;div class="cycle-slideshow slider" 
+	data-cycle-timeout=2000
+	data-cycle-loader=true
+	data-cycle-progressive="#slider"
+	data-cycle-slides=">div"
+&gt;
+	// Markup declared below will be loaded as the DOM loaded
+	&lt;div&gt;
+		&lt;img src="assets/images/slider-1.jpg"&gt;
+		&lt;span&gt;Slider image 1&lt;/span&gt;
+	&lt;/div&gt;
+	// Using the data-cycle-split you can define the split pattern that tells cycle2 that its the end of one slide
+	&lt;script id="slider" type="text/cycle" data-cycle-split="---"&gt;
+		&lt;div&gt;
+			&lt;img src='assets/images/slider-2.jpg'&gt;
+			&lt;span&gt;Slider image 2&lt;/span&gt;
+		&lt;/div&gt;
+		---
+		&lt;div&gt;
+			&lt;img src='assets/images/slider-3.jpg'&gt;
+			&lt;span&gt;Slider image 3&lt;/span&gt;
+		&lt;/div&gt;
+		---
+		...
+		---
+		&lt;div&gt;
+			&lt;img src='assets/images/slider-10.jpg'&gt;
+			&lt;span&gt;Slider image 10&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/script&gt;
+&lt;/div&gt;
+</code></pre>
     		</div>
     	</div>
     	

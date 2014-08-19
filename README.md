@@ -35,12 +35,12 @@ Basic Structure need to be followed while creating a progressive loader
 		data-cycle-progressive="#slider"
 		data-cycle-slides=">div"
 	>
-		#Markup declared below will be loaded as the DOM loaded
+		Markup declared below will be loaded as the DOM loaded
 		<div>
 			<img src="assets/images/slider-1.jpg">
 			<span>Slider image 1</span>
 		</div>
-		#Using the data-cycle-split you can define the split pattern that tells cycle2 that its the end of one slide
+		Using the data-cycle-split you can define the split pattern that tells cycle2 that its the end of one slide
 		<script id="slider" type="text/cycle" data-cycle-split="---">
 			<div>
 				<img src='assets/images/slider-2.jpg'>

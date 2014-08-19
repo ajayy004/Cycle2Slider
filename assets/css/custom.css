@@ -13,19 +13,13 @@ html {
 	width: 940px;
 	margin: 0 auto;
 }
-h1 {
-	font: 60px/70px "sans-serif";
-	margin: 0 0 60px 0;
-	text-align: center;
-}
 h3 {
-	font: 30px/40px "sans-serif";
-	margin-bottom: 20px;
+	font: 30px/32px "sans-serif";
+	margin: 30px 0;
 	text-align: center;
 }
 .sliderWrap {
-	float: left;
-	margin: 0 20px
+	margin: 0 auto;
 }
 .sliderWrap .slider{
 	width: 400px;
@@ -53,36 +47,24 @@ h3 {
 }
 .controller {
 	text-align: center;
-	font: 30px/40px "sans-serif";
-	margin: 20px 0
+	font: 20px/22px "sans-serif";
+	margin: 20px 0;
 }
 #progress {
-position: absolute;
-bottom: 0;
-height: 6px;
-width: 0px;
-background: #C00;
-z-index: 500;
+	position: absolute;
+	bottom: 0;
+	height: 6px;
+	width: 0px;
+	background: #C00;
+	z-index: 500;
 }
-.left-pull,
-.sliderNav {
-	float: left;
+pre {
+	margin: 50px 0;
 }
-.sliderNav {
-	margin: 25px 0;
-}
-.sliderNav li {
-	width: 60px;
-	height: 60px;
-	padding: 10px;
-	background: #888;
-	margin: 0 5px 10px 0;
-}
-.sliderNav li img {
-	width: 100%;
-}
-.sliderNav li.cycle-pager-active {
+code {
 	background: #FFF;
-	color: #000;
-	box-shadow: 0 0 5px #000;
+	display: block;
+	padding: 20px;
+	border-radius: 5px;
+	word-break: break-word;
 }
